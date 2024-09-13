@@ -1,0 +1,21 @@
+meta {
+  name: CREATE PRODUCT
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "name": "Bread",
+    "code": "12002",
+    "quantity": 10,
+    "price": 200.0
+  }
+}
